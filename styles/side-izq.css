@@ -1,0 +1,48 @@
+.pintado {
+    background-color: rgb(131, 250, 107);
+    color: #000000;
+}
+
+.padre-links {
+    overflow: hidden;
+    position: relative;
+    /* Asegurándonos de que el contenedor padre no tenga una altura inicial fija para que pueda ajustarse */
+}
+
+.title-links {
+    display: flex;
+    z-index: 2; /* Ajuste para asegurar que siempre esté sobre los enlaces */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px 15px;
+}
+.title-links h1{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+/* Inicialmente, no queremos que .show-links ocupe espacio */
+.show-links {
+    height: 0;
+    overflow: hidden;
+    transition: height ease-in-out 0.7s;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.show-links a {
+    padding-left: 35px;
+    opacity: 0; /* Inicialmente ocultos */
+    transition: opacity 0.7s ease-in-out;
+}
+.girar{
+    transform: rotate(90deg);
+    transition: ease-in-out all .7s;
+}
+.contra{
+    transform: rotate(0deg);
+    transition: ease-in-out all .7s;
+}

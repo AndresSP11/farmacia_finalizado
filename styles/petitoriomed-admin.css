@@ -1,0 +1,814 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,600;1,600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Raleway:ital,wght@0,600;1,600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("/img/fondo-stock.png") no-repeat right center fixed;
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.portada-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 4%;
+  height: 10%;
+}
+
+h1 {
+  color: #195780;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 5vh;
+  margin-bottom: 3%;
+  height: 9%;
+}
+
+.logo-uni {
+  display: flex;
+  align-items: center;
+}
+
+.logo-uni img {
+  width: 75%;
+  height: 16%;
+  padding-left: 10%;
+}
+
+.logo-uni-text {
+  font-weight: bold;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.photo-user {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.photo-user img {
+  width: 100%;
+  height: 16%;
+  padding-right: 3vh;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin-top: 4%;
+}
+
+.buscar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.salir-receta {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 70%;
+}
+
+.salir-receta button {
+  background-color: rgb(25, 87, 128); /* Azul */
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+.rounded-top {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgb(25, 87, 128);
+  border: 1px solid #ccc;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.salir-receta button:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+.buscar button {
+  background-color: rgb(57, 124, 166); /* Azul */
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+.alerta {
+  position: relative;
+  width: 60%;
+  padding: 3px;
+  text-align: center;
+  margin-top: 7px;
+  color: #ffffff;
+  background-color: rgb(229, 76, 76);
+  font-weight: bolder;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  margin-bottom: 0;
+  z-index:100;
+}
+
+#alertas-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center; /* Centra las alertas horizontalmente */
+  width: 100%; /* Asegura que el contenedor tome el ancho completo */
+  opacity: 1; /* Inicialmente visible */
+  transition: opacity 0.5s ease-out; /* Transición para la opacidad */
+}
+
+.buscar a i {
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.salir-receta a i {
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.buscar a:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+.search-container .left,
+.search-container .right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-container .left {
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.search-container .right {
+  justify-content: flex-end;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  border: 1px solid rgb(57, 124, 166);
+}
+
+table tr {
+  margin: 5px 0; /* 5px de margen arriba y abajo */
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  width: 10%;
+}
+
+th {
+  background-color: rgb(57, 124, 166);
+  color: white;
+  border-right: 1px solid white; /* Borde derecho blanco */
+  border-left: 1px solid white; /* Borde izquierdo blanco */
+  font-size: 1.7vh;
+}
+
+tr {
+  margin: 0 5px;
+}
+
+td {
+  border-right: 1px solid rgb(57, 124, 166); /* Borde derecho azul */
+  border-left: 1px solid rgb(57, 124, 166); /* Borde izquierdo azul */
+  width: 10%; /* Ajusta el ancho de las columnas aquí */
+  font-size: 2.1vh;
+  color: #195780;
+}
+
+th:first-child,
+td:first-child {
+  border-left: 1px solid rgb(57, 124, 166); /* Borde izquierdo blanco */
+}
+
+th:last-child,
+td:last-child {
+  border-right: none; /* Elimina el borde derecho en la última celda */
+}
+
+.search-text {
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 2.7vh;
+}
+
+.line-below {
+  width: 100%;
+  height: 2px;
+  background-color: #195780;
+  margin-top: -2px; /* Ajusta este valor si es necesario */
+}
+
+.first-molder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 17vh;
+}
+
+molder-text {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.7vh;
+}
+
+#fichador,
+#codigo-alumno,
+#dni-medico {
+  padding-right: 19px;
+  width: 44%;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.portada-providencial {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  height: 12vh;
+  margin-top: 9%;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 81px; /* Adjust as needed */
+  right: -2%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tooltip a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #eee;
+}
+
+.tooltip a:last-child {
+  border-bottom: none;
+}
+
+.tooltip a:hover {
+  background-color: #ed6868;
+}
+
+.photo-user:hover .tooltip {
+  display: block;
+}
+
+.molder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #195780;
+  font-weight: bold;
+  font-size: 2.7vh;
+  margin-top: 2%;
+}
+
+#molder-input,
+#fichador-input,
+#fecha-modificar,
+#CodigoAlumno {
+  padding-right: 19px;
+  width: 33vh;
+  margin: 7px 0;
+  margin-left: 20px;
+  height: 4vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+#medico-input {
+  padding-right: 19px;
+  width: 36vh;
+  margin: 7px 0;
+  margin-left: 20px;
+  height: 4.4vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.molder-right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.molder-left {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+
+.contenedor-final {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8%;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+}
+
+.submit-container button {
+  background-color: rgb(25, 87, 128);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.submit-container button i {
+  margin-left: 15px;
+}
+
+.submit-container button:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) sepia(100%) saturate(10000%) hue-rotate(190deg);
+}
+
+input[type="date"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  color: #195780;
+  border: 2px solid #195780;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+#fecha-input {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.calendar {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 2px solid #195780;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 240px; /* Adjust this value to change the overall width */
+}
+
+.date-input-container {
+  position: relative;
+}
+
+.date-input-container input[type="text"] {
+  padding-right: 30px; /* Ajusta el espacio para el icono */
+}
+
+.date-input-container i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #195780; /* Color del icono */
+  cursor: pointer;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  color: #195780;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 1.2em; /* Reduce the font size */
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  color: #195780;
+  font-size: 18px; /* Reduce the button size */
+  cursor: pointer;
+}
+
+.calendar-body {
+  padding: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px; /* Reduce the gap between days */
+}
+
+.calendar-grid div {
+  padding: 5px; /* Reduce the padding for days */
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  font-size: 12px; /* Reduce the font size of days */
+}
+
+.calendar-grid div:hover {
+  background: #195780;
+  color: white;
+}
+
+#month-year {
+  font-size: 20px;
+}
+
+.envio-form {
+  background-color: rgb(25, 87, 128);
+  color: white;
+  border: none;
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+.hijo-formulario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.envio-form i {
+  margin-left: 5px;
+}
+
+.salir-receta {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.salir-receta i {
+  margin-right: 15px; /* Espacio entre el icono y el texto */
+  font-size: 20px;
+}
+
+.salir-receta a:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+.salir-receta a {
+  background-color: rgb(25, 87, 128);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+.contenedor-final {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 8%;
+}
+
+.portada-providencial-receta {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 42vh;
+  margin-top: 6%;
+}
+
+.search-container-receta {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 2vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.search-container-receta .left,
+.search-container-receta .right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-container-receta .left {
+  justify-content: space-around;
+  width: 36%;
+  height: 19vh;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.search-container-receta .right {
+  justify-content: space-around;
+  width: 36%;
+  height: 19vh;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#codigo-pet,
+#preciou-pet,
+#fechav-pet,
+#precio-edit,
+#fecha-edit {
+  width: 37vh;
+  margin: 7px 0;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+#laboratorio-pet,
+#number-lote,
+#cantidad-pet,
+#laboratorio-edit,
+#lote-edit,
+#cantidad-edit {
+  padding-right: 19px;
+  width: 27vh;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.form-clas {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.search-text-registrar {
+  color: #195780;
+  font-weight: bold;
+  font-size: 2.4vh;
+}
+
+.div-1 {
+  display: flex;
+  align-items: center;
+  width: 84%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.div-2 input {
+  text-align: center;
+}
+
+.div-2 {
+  display: flex;
+  width: 93%;
+  align-items: center;
+  justify-content: end;
+}
+
+.div-3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  align-items: center;
+  justify-content: end;
+}
+
+#enviar-medicamentos {
+  padding-right: 19px;
+  width: 16vh;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  background-color: rgb(25, 87, 128);
+  padding-inline: 10px;
+  color: #ffffff;
+  font-size: 2vh;
+  font-weight: 400;
+}
+
+#enviar-medicamentos:hover {
+  background-color: #75ea96; /* Color de fondo al pasar el cursor */
+  border: none;
+}
+
+.tabla-container-petitorio {
+  max-height: 280px;
+  overflow-y: auto;
+  border: 1px solid rgb(57, 124, 166);
+  overflow-x: auto;
+  width: 70%;
+}
+
+.tabla-container-petitorio::-webkit-scrollbar {
+  width: 12px; /* Ancho del deslizador */
+  height: 12px; /* Altura del deslizador horizontal */
+}
+
+.tabla-container-petitorio::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color del track del deslizador */
+}
+
+.tabla-container-petitorio::-webkit-scrollbar-thumb {
+  background-color: rgb(57, 124, 166); /* Color del thumb del deslizador */
+  border-radius: 10px; /* Radio de borde del thumb */
+  border: 3px solid #f1f1f1; /* Borde del thumb */
+}
+
+.tabla-container-petitorio::-webkit-scrollbar-thumb:hover {
+  background: #2d6a92; /* Color del thumb al pasar el ratón */
+}
+
+.alerta {
+  width: 60%;
+  padding: 5px;
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+  background-color: rgb(229, 76, 76);
+  font-weight: bolder;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  margin-bottom: 0;
+}
+
+#alertas-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center; /* Centra las alertas horizontalmente */
+  width: 100%; /* Asegura que el contenedor tome el ancho completo */
+  top: 0;
+  opacity: 1; /* Inicialmente visible */
+  transition: opacity 0.5s ease-out; /* Transición para la opacidad */
+}
+
+.salir {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 2vh;
+  margin-bottom: 7%;
+  width: 70%;
+}
+
+.salir a {
+  background-color: rgb(25, 87, 128); /* Azul */
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}

@@ -1,0 +1,17 @@
+{
+    "name": "el_bu/farmacia_asp",
+    "autoload": {
+        "psr-4": {
+            "ElBu\\FarmaciaAsp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andres",
+            "email": "andres.salazar.p@uni.pe"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.1"
+    }
+}

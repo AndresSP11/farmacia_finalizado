@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+#codigo_orden,
+#proveedor,
+#fecha_llegada {
+  padding-right: 19px;
+  width: 63%;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.search-container-receta .left-buscar {
+  align-items: baseline;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.input-buscar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 63%;
+}
+
+.alerta {
+  width: 60%;
+  padding: 3px;
+  text-align: center;
+  margin-top: 7px;
+  color: #ffffff;
+  background-color: rgb(229, 76, 76);
+  font-weight: bolder;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  margin-bottom: 0;
+}
+
+#alertas-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center; /* Centra las alertas horizontalmente */
+  width: 100%; /* Asegura que el contenedor tome el ancho completo */
+  opacity: 1; /* Inicialmente visible */
+  transition: opacity 0.5s ease-out; /* Transición para la opacidad */
+}
+
+.search-container-receta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.submit-button {
+  background-color: rgb(25, 87, 128);
+  color: white;
+  border: none;
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+.submit-button i {
+  margin-left: 5px;
+}
+
+.salir-receta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2vh;
+  margin-bottom: 3%;
+  width: 70%;
+}
+
+.salir-receta i {
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.salir-receta a:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+.salir-receta a {
+  background-color: rgb(25, 87, 128);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+.contenedor-final {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 13%;
+}
+
+.button-excel {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-excel a {
+  color: white;
+  text-decoration: none;
+}
+
+.button-excel a:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.button-excel i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Additional styles for the icon */
+.bx.bxs-download::before {
+  content: "\f5da"; /* Unicode for download icon */
+  font-family: "Boxicons";
+}
+.bxs-file-export{
+  font-size:40px;
+  color:#ffffff;
+}
+.dowmload-excel{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color:#ffffff;
+  border-radius:10px;
+  background:#195780;
+  padding:5px;
+}

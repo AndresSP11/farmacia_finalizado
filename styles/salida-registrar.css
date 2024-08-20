@@ -1,0 +1,459 @@
+#readonly-input {
+  padding-right: 19px;
+  width: 44%;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.search-container-receta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.search-receta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.search-container-receta .left,
+.search-container-receta .right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-search {
+  display: flex;
+  flex-direction: row;
+  /* height: 8vh; */
+  margin-bottom: -8vh;
+}
+
+.contenedor-divs {
+  max-height: 18vh;
+  width: 37vh;
+  overflow-y: auto;
+  border-radius: 0 0 18px 18px;
+  border: 2px solid #195780;
+  /* border-top: none; */
+  background-color: white;
+  padding-inline: 10px;
+  position: absolute;
+  z-index: 1000;
+  right: 0px;
+  top: 100%;
+  margin: 7px 0;
+  display: none;
+}
+
+.contenedor-divs .valor {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contenedor-divs .valor:hover {
+  background-color: #f0f0f0;
+}
+
+.search-container-receta .left {
+  justify-content: space-around;
+  width: 36%;
+  height: 19vh;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.search-container-receta .right {
+  justify-content: space-around;
+  width: 36%;
+  height: 19vh;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.div-1 {
+  display: flex;
+  align-items: center;
+  width: 83%;
+  justify-content: space-between;
+  position: relative;
+  margin-top: -6vh;
+}
+
+.div-2 input {
+  text-align: center;
+}
+
+.div-2 {
+  display: flex;
+  width: 93%;
+  align-items: center;
+  justify-content: end;
+  margin-top: -6vh;
+}
+
+#salidaReg {
+  padding-right: 19px;
+  width: 16vh;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  background-color: rgb(25, 87, 128);
+  padding-inline: 10px;
+  color: #ffffff;
+  font-size: 2vh;
+  font-weight: 400;
+}
+
+#dato_texto_div1 {
+  padding-right: 19px;
+  width: 49vh;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+#salidaReg:hover {
+  background-color: #75ea96; /* Color de fondo al pasar el cursor */
+  border: none;
+}
+
+#dato_texto_div2 {
+  padding-right: 19px;
+  width: 27vh;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+#nombre-pet {
+  width: 37vh;
+  margin: 7px 0;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+#cantidadMed {
+  padding-right: 19px;
+  width: 27vh;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.container-salida {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.tabla-container-receta {
+  max-height: 250px; /* Puedes ajustar la altura según sea necesario */
+  overflow-y: auto;
+  border: 1px solid rgb(57, 124, 166);
+  overflow-x: hidden;
+  width: 60%;
+}
+
+.tabla-container-receta::-webkit-scrollbar {
+  width: 12px; /* Ancho del deslizador */
+  height: 12px; /* Altura del deslizador horizontal */
+}
+
+.tabla-container-receta::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color del track del deslizador */
+}
+
+.tabla-container-receta::-webkit-scrollbar-thumb {
+  background-color: rgb(57, 124, 166); /* Color del thumb del deslizador */
+  border-radius: 10px; /* Radio de borde del thumb */
+  border: 3px solid #f1f1f1; /* Borde del thumb */
+}
+
+.tabla-container-receta::-webkit-scrollbar-thumb:hover {
+  background: #2d6a92; /* Color del thumb al pasar el ratón */
+}
+
+.div-3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  align-items: center;
+  justify-content: end;
+}
+
+.salir-receta {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 70%;
+}
+
+.salir-receta a {
+  background-color: rgb(25, 87, 128); /* Azul */
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+.contenedor-final {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 6%;
+}
+
+.botones_siguiente {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+}
+.cartel-aviso {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #195780;
+  display: flex;
+  flex-direction: column;
+  font-size: 39px;
+  width: 68%;
+}
+.botones-form-edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+button.aceptar-peticion {
+  font-size: 2vh;
+  background-color: #4caf50;
+  color: white;
+  width: 20vh;
+  border: none;
+  border-radius: 20px;
+  height: 5.3vh;
+  cursor: pointer;
+}
+
+button.aceptar-peticion:hover {
+  background-color: #1321e0;
+}
+
+button.cancelar-peticion {
+  font-size: 2vh;
+  background-color: #e54c4c;
+  color: white;
+  width: 20vh;
+  border: none;
+  border-radius: 20px;
+  height: 5.3vh;
+  cursor: pointer;
+}
+
+button.cancelar-peticion:hover {
+  background-color: #1321e0;
+}
+
+.botones-orden {
+  align-items: center;
+  display: flex;
+  height: 12vh;
+  justify-content: space-around;
+}
+
+.contenedor-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.botones_siguiente button {
+  background-color: rgb(25, 87, 128);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  align-items: center;
+  font-size: 2vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.botones_siguiente button i {
+  margin-left: 5px;
+}
+
+.botones_siguiente button:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+.salir-receta a:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+.salir-receta i {
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.salir-receta button:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+.monto-total-dinero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 14%;
+  margin-top: 2vh;
+}
+
+.monto-total-dinero p {
+  color: #195780;
+  font-size: 2.2vh;
+  font-weight: bolder;
+}
+
+.monto-total-dinero span p {
+  color: #ffffff;
+}
+
+.parrafo {
+  background-color: rgb(25, 87, 128);
+  color: #fff;
+  padding: 4px 21px;
+  border-radius: 20px;
+}
+
+.eliminacion:hover {
+  background-color: #e54c4c;
+}
+
+.eliminacion i {
+  font-size: 32px;
+}
+
+#enviar-ls-md {
+  background-color: rgb(25, 87, 128);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+#enviar-ls-md:hover {
+  background-color: #75ea96; /* Color de fondo al pasar el cursor */
+}
+.alertas {
+  width: 60%;
+  padding: 5px;
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+  font-weight: bolder;
+  display: none;
+  border-radius: 20px;
+  background-color: #e54c4c;
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  margin-bottom: 0;
+}
+
+#alertas-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center; /* Centra las alertas horizontalmente */
+  width: 100%; /* Asegura que el contenedor tome el ancho completo */
+  opacity: 1; /* Inicialmente visible */
+  transition: opacity 0.5s ease-out; /* Transición para la opacidad */
+}
+.cantidad-salida{
+  background: yellow;
+  border-radius:10px;
+  padding:3px;
+}

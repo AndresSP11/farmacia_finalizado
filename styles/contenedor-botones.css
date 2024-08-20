@@ -1,0 +1,27 @@
+.contenedor-de-botones {
+  display: flex;
+  padding: 20px 10px;
+  margin-top: 10px;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.retroceder {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgb(149, 255, 255);
+  padding: 4px 8px;
+  font-weight: 800;
+  border-radius: 10px;
+}
+.parrafo {
+  background-color: rgb(25, 87, 128);
+  color: #fff;
+  padding: 4px 21px;
+  border-radius: 20px;
+}
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

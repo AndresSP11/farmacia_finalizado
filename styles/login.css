@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,600;1,600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("/img/fondo-login.png") no-repeat right center fixed;
+  background-size: contain;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#login,
+#password {
+  padding-right: 19px;
+  width: 70vh;
+  margin: 7px 0;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+#login-label,
+#password-label {
+  /* Estilos específicos para las etiquetas de usuario y contraseña */
+  color: #195780;
+}
+
+.search-container-receta .left-buscar {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 98%;
+  flex-direction: column;
+}
+
+.input-buscar {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.search-container-receta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 7%;
+}
+
+.submit-button {
+  background-color: rgb(25, 87, 128);
+  color: white;
+  border: none;
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+.submit-button:hover {
+  /* Estilos al hacer hover */
+  background-color: #75ea96;
+}
+
+.submit-button i {
+  margin-left: 5px;
+}
+
+.salir-receta {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.salir-receta i {
+  margin-right: 15px; /* Espacio entre el icono y el texto */
+  font-size: 20px;
+}
+
+.salir-receta a:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+.salir-receta a {
+  background-color: rgb(25, 87, 128);
+  color: white;
+  border: none;
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+.contenedor-final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 8%;
+}
+
+.portada-providencial {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+  height: 31%;
+  margin-top: 7%;
+}
+
+.portada-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 4%;
+  height: 10%;
+}
+
+.alerta {
+  width: 60%;
+  padding: 5px;
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+  background-color: rgb(229, 76, 76);
+  font-weight: bolder;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  margin-bottom: 0;
+}
+
+#alertas-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center; /* Centra las alertas horizontalmente */
+  width: 100%; /* Asegura que el contenedor tome el ancho completo */
+  opacity: 1; /* Inicialmente visible */
+  transition: opacity 0.5s ease-out; /* Transición para la opacidad */
+}
+
+.logo-uni {
+  display: flex;
+  align-items: center;
+}
+
+.logo-uni img {
+  width: 75%;
+  height: 16%;
+  padding-left: 10%;
+}
+
+.logo-uni-text {
+  font-weight: bold;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+h1 {
+  color: #195780;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 5vh;
+  margin-bottom: 3%;
+  height: 9%;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.search-text {
+  color: #195780;
+  font-weight: bold;
+  font-size: 2.7vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (width<530px) {
+  .img-cm {
+    display: none;
+  }
+  .form-cm {
+    width: 100%;
+  }
+}
+@media (width>580px) {
+}

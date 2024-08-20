@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,600;1,600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Raleway:ital,wght@0,600;1,600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+#readonly-input {
+  padding-right: 19px;
+  width: 44%;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.alertas {
+  width: 60%;
+  padding: 5px;
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+  font-weight: bolder;
+  border-radius: 20px;
+  display: none;
+  background-color: rgb(229, 76, 76);
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  margin-bottom: 0;
+}
+
+#alertas-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center; /* Centra las alertas horizontalmente */
+  width: 100%; /* Asegura que el contenedor tome el ancho completo */
+  opacity: 1; /* Inicialmente visible */
+  transition: opacity 0.5s ease-out; /* Transición para la opacidad */
+}
+
+.search-container-receta {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  flex-direction: column;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form-clas {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.search-container-receta .left,
+.search-container-receta .right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-container-receta .left {
+  justify-content: space-around;
+  width: 36%;
+  height: 19vh;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.search-container-receta .right {
+  justify-content: space-around;
+  width: 36%;
+  height: 19vh;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.form-clas .left,
+.form-clas .right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-clas .left {
+  justify-content: space-around;
+  width: 46%;
+  height: 19vh;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.form-clas .right {
+  justify-content: space-around;
+  width: 36%;
+  height: 19vh;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.div-1 {
+  display: flex;
+  align-items: center;
+  width: 84%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.div-2 input {
+  text-align: center;
+}
+
+.div-2 {
+  display: flex;
+  width: 93%;
+  align-items: center;
+  justify-content: end;
+}
+
+.div-3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  align-items: center;
+  margin-top: 4vh;
+  justify-content: end;
+}
+
+#codigo-pet,
+#preciou-pet,
+#fechav-pet,
+#precio-edit,
+#fecha-edit {
+  width: 37vh;
+  margin: 7px 0;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+#codigo-edit {
+  width: 37vh;
+  margin: 7px 0;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+  text-align: center;
+  background: #d2cccc;
+}
+
+#laboratorio-pet,
+#number-lote,
+#cantidad-pet,
+#laboratorio-edit,
+#lote-edit,
+#cantidad-edit {
+  padding-right: 19px;
+  width: 27vh;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  padding-inline: 10px;
+  color: #195780;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.table-ls {
+  max-height: 180px;
+  overflow-y: auto;
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  border-bottom: 1px solid rgb(57, 124, 166);
+}
+
+.cont-salir-receta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7vh;
+}
+
+.salir-receta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.salir-receta a {
+  background-color: rgb(25, 87, 128); /* Azul */
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+.salir-receta a:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+.salir-receta button:hover {
+  background-color: #75ea96; /* Azul más oscuro al hacer hover */
+}
+
+.container-orden {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.contenedor-mt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2vh;
+}
+
+.contenedor-mt p {
+  color: #195780;
+  font-size: 2.4vh;
+  font-weight: 400;
+}
+
+.contenedor-mt span p {
+  color: #195780;
+}
+
+.centrar-tabla {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-self: center;
+}
+
+.portada-providencial-receta {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 42vh;
+  margin-top: 7%;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(57, 124, 166);
+}
+
+/* Estilos para el deslizador */
+.table-ls::-webkit-scrollbar {
+  width: 12px; /* Ancho del deslizador */
+}
+
+.table-ls::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color del track del deslizador */
+}
+
+.table-ls::-webkit-scrollbar-thumb {
+  background-color: rgb(57, 124, 166); /* Color del thumb del deslizador */
+  border-radius: 10px; /* Radio de borde del thumb */
+  border: 3px solid #f1f1f1; /* Borde del thumb */
+}
+
+.table-ls::-webkit-scrollbar-thumb:hover {
+  background: #2d6a92; /* Color del thumb al pasar el ratón */
+}
+
+#enviar-medicamentos {
+  padding-right: 19px;
+  width: 16vh;
+  margin: 7px 0;
+  margin-left: 10px;
+  height: 5vh;
+  border-radius: 18px;
+  border: 2px solid #195780;
+  background-color: rgb(25, 87, 128);
+  padding-inline: 10px;
+  color: #ffffff;
+  font-size: 2vh;
+  font-weight: 400;
+}
+
+#enviar-medicamentos:hover {
+  background-color: #75ea96; /* Color de fondo al pasar el cursor */
+}
+
+.bxs-right-arrow {
+  margin-right: 5px;
+}
+
+.edicion i {
+  font-size: 32px;
+}
+
+.eliminacion i {
+  font-size: 32px;
+}
+
+#enviar-ls-md {
+  background-color: rgb(25, 87, 128);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+#enviar-ls-md:hover {
+  background-color: #75ea96; /* Color de fondo al pasar el cursor */
+}
+
+.contenedor-mt span {
+  border-radius: 21px;
+  border: 2px solid rgb(25, 87, 128);
+  padding: 2px 24px;
+  margin-left: 10px;
+}
+
+.search-text-registrar {
+  color: #195780;
+  font-weight: bold;
+  font-size: 2.4vh;
+}
+
+.codigo-medicamento-edicion {
+  color: #195780;
+  font-weight: bold;
+  font-size: 2.4vh;
+}
+
+.bx-trash {
+  color: #e54c4c;
+  font-size: 2vh;
+}
+
+.bxs-right-arrow {
+  margin-left: 7px;
+}
+
+.bx-trash:hover {
+  color: #1321e0;
+}
+
+/* Estilos para el icono de editar */
+.bx-edit {
+  color: #75ea96;
+  font-size: 2vh;
+}
+
+.bx-edit:hover {
+  color: #1321e0;
+}
+
+.valor {
+  display: block;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.valor:hover {
+  background-color: rgb(93, 93, 255);
+}
+
+.contenedor-divs {
+  max-height: 18vh;
+  width: 37vh;
+  overflow-y: auto;
+  border-radius: 0 0 18px 18px;
+  border: 2px solid #195780;
+  /* border-top: none; */
+  background-color: white;
+  padding-inline: 10px;
+  position: absolute;
+  z-index: 1000;
+  right: 0px;
+  top: 100%;
+  margin: 7px 0;
+  display: none;
+}
+
+.contenedor-divs .valor {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contenedor-divs .valor:hover {
+  background-color: #f0f0f0;
+}
+
+.contenedor-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cartel-aviso {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #195780;
+  display: flex;
+  flex-direction: column;
+  font-size: 39px;
+  width: 68%;
+}
+.botones-form-edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.botones-orden {
+  align-items: center;
+  display: flex;
+  height: 12vh;
+  justify-content: space-around;
+}
+
+button.aceptar-edicion {
+  font-size: 2vh;
+  background-color: #4caf50;
+  color: white;
+  width: 20vh;
+  border: none;
+  border-radius: 20px;
+  height: 5.3vh;
+  cursor: pointer;
+}
+
+button.aceptar-edicion:hover {
+  background-color: #1321e0;
+}
+
+button.aceptar-peticion {
+  font-size: 2vh;
+  background-color: #4caf50;
+  color: white;
+  width: 20vh;
+  border: none;
+  border-radius: 20px;
+  height: 5.3vh;
+  cursor: pointer;
+}
+
+button.aceptar-peticion:hover {
+  background-color: #1321e0;
+}
+
+button.cancelar-peticion {
+  font-size: 2vh;
+  background-color: #e54c4c;
+  color: white;
+  width: 20vh;
+  border: none;
+  border-radius: 20px;
+  height: 5.3vh;
+  cursor: pointer;
+}
+
+button.cancelar-peticion:hover {
+  background-color: #1321e0;
+}
