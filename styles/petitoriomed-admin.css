@@ -22,10 +22,9 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
+  display: flexbox;
   align-items: center;
-  height: 100vh;
+  height: 800px;
   flex-direction: column;
   position: relative;
 }
@@ -297,7 +296,7 @@ molder-text {
   flex-direction: column;
   width: 70%;
   align-items: center;
-  height: 12vh;
+  height: 8vh;
   margin-top: 9%;
 }
 
@@ -737,7 +736,7 @@ input[type="date"] {
 }
 
 .tabla-container-petitorio {
-  max-height: 280px;
+  max-height: 250px;
   overflow-y: auto;
   border: 1px solid rgb(57, 124, 166);
   overflow-x: auto;
@@ -793,7 +792,7 @@ input[type="date"] {
   display: flex;
   align-items: center;
   justify-content: start;
-  margin-top: 2vh;
+  margin-top: 10px;
   margin-bottom: 7%;
   width: 70%;
 }

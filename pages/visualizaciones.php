@@ -42,18 +42,26 @@ if(!$auth){
             <div>
                 <img src="../imagenes/logouni.png" alt="" class="imagen">
             </div>
-            <div>
-                <a href="./observarmerma.php" class="inventario-enlace">
-                    <img src="./imagenes/azulmed.png" alt="">
-                    <p>Visualizar <br>
-                Mermas</p>
-                </a>
-                <a href="./inventario.php" class="inventario-enlace">
-                    <img src="./imagenes/azulmed.png" alt="">
-                    <p>Visualizar <br>
-                     Medicamentos</p>
-                </a>
-               
+            <div class="columns">
+                <div>
+                    <a href="./observarmerma.php" class="inventario-enlace">
+                        <img src="./imagenes/azulmed.png" alt="">
+                        <p>Visualizar <br>
+                    Mermas</p>
+                    </a>
+                    <a href="./inventario.php" class="inventario-enlace">
+                        <img src="./imagenes/azulmed.png" alt="">
+                        <p>Visualizar <br>
+                        Medicamentos</p>
+                    </a>
+                </div>
+                <div class="salir">
+                        <a href="<?php if($rol==1){
+                            echo('./new-admin.php');
+                        }else{
+                            echo('./new-inicio.php');
+                        } ?>"><i class='bx bxs-left-arrow'></i>Regresar</a>
+                </div>
             </div>
         </div>
     </section>

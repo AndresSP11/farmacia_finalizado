@@ -40,24 +40,34 @@ header("X-Frame-Options: DENY");
             <div>
                 <img src="../imagenes/logouni.png" alt="" class="imagen">
             </div>
-            <div>
-                <a href="./definir-min.php" class="inventario-enlace">
-                    <img src="./imagenes/azulmed.png" alt="">
-                    <p>Stock mínimo</p>
-                </a>
-                <a href="./periodo-admin.php" class="ingreso-med-enlace">
-                    <img src="./imagenes/medicamentos.png" alt="">
-                    <p>Periodo</p>
-                </a>
-                <a href="./petitoriomed-admin.php" class="ingreso-med-enlace">
-                    <img src="./imagenes/medicamentos.png" alt="">
-                    <p>Actualizar Petitorio</p>
-                </a>
-                <a href="./observarmerma.php" class="ingreso-med-enlace">
-                    <img src="./imagenes/medicamentos.png" alt="">
-                    <p>Visualizar <br>Mermas</p>
-                </a>
+            <div class="columns">
+                <div>
+                    <a href="./definir-min.php" class="inventario-enlace">
+                        <img src="./imagenes/azulmed.png" alt="">
+                        <p>Stock mínimo</p>
+                    </a>
+                    <a href="./periodo-admin.php" class="ingreso-med-enlace">
+                        <img src="./imagenes/medicamentos.png" alt="">
+                        <p>Periodo</p>
+                    </a>
+                    <a href="./petitoriomed-admin.php" class="ingreso-med-enlace">
+                        <img src="./imagenes/medicamentos.png" alt="">
+                        <p>Actualizar Petitorio</p>
+                    </a>
+                    <a href="./observarmerma.php" class="ingreso-med-enlace">
+                        <img src="./imagenes/medicamentos.png" alt="">
+                        <p>Visualizar <br>Mermas</p>
+                    </a>
+                </div>
+                <div class="salir">
+                    <a href="<?php if($rol==1){
+                        echo('./new-admin.php');
+                    }else{
+                        echo('./new-inicio.php');
+                    } ?>"><i class='bx bxs-left-arrow'></i>Regresar</a>
+                </div>
             </div>
+            
         </div>
     </section>
 </body>

@@ -20,8 +20,7 @@ $titulo='salida-merma';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' ka-f.fontawesome.com; form-action 'self'; font-src 'self' cdnjs.cloudflare.com unicons.iconscout.com stackpath.bootstrapcdn.com unpkg.com cdn.jsdelivr.net fonts.gstatic.com; script-src 'self' 'nonce-<?php echo $nonce_value; ?>' cdn.jsdelivr.net code.jquery.com stackpath.bootstrapcdn.com cdnjs.cloudflare.com; style-src 'self' 'nonce-<?php echo $nonce_value; ?>' stackpath.bootstrapcdn.com cdnjs.cloudflare.com unicons.iconscout.com unpkg.com fonts.googleapis.com cdn.jsdelivr.net; img-src 'self' cdn-icons-png.flaticon.com">
-    
+   
     <title><?php echo $titulo ?></title>
     <link rel="stylesheet" href="../styles/salida-merma.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -106,7 +105,7 @@ $titulo='salida-merma';
                 <div class="salir-receta">
                     <a href="
                     <?php if($rol==1){
-                    echo('./new-admin.php');
+                    echo('./new-nextpage.php');
                 }else{
                     echo('./new-inicio.php');
                 } ?>
@@ -118,6 +117,6 @@ $titulo='salida-merma';
             </div> 
 
         </div>
-    <script nonce="<?php echo $nonce_value; ?>" src="../js/salida-merma.js"></script>
+    <script src="../js/salida-merma.js"></script>
 </body>
 </html>

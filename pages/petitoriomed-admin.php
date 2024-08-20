@@ -155,40 +155,38 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                 </form>
             </div>
         </div>
-        <div class="container">
-            <div class="tabla-container-petitorio">
-                <table class="tabla" id='tabla'>
-                <thead>
-                    <tr>
-                    <th>CÓDIGO <br> SIGA</th>
-                    <th>MEDICAMENTO</th>
-                    <th>CONCENTRACIÓN</th>
-                    <th>FORMA FARMACEUTICA</th>
-                    <th>MINÍMO STOCK</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <?php
-                    $query="SELECT * FROM `petitorio`;";
-                    $ejecutar=mysqli_query($db,$query);
-                ?>
-                <?php
-                while($elemento=mysqli_fetch_assoc($ejecutar)):?>
+        <div class="tabla-container-petitorio">
+            <table class="tabla" id='tabla'>
+            <thead>
                 <tr>
-                    <td><?php echo $elemento['codigo_siga'];?></td>
-                    <td><?php echo $elemento['denomin_comun_internac_o_principio_activo'];?></td>
-                    <td><?php echo $elemento['concentracion'];?></td>
-                    <td><?php echo $elemento['forma_farmaceutica'];?></td>
-                    <td><?php echo $elemento['minimo_stock'];?></td>
+                <th>CÓDIGO <br> SIGA</th>
+                <th>MEDICAMENTO</th>
+                <th>CONCENTRACIÓN</th>
+                <th>FORMA FARMACEUTICA</th>
+                <th>MINÍMO STOCK</th>
                 </tr>
-                <?php endwhile;?>
-                </tbody>
-                </table>
-            </div> 
-        </div>
+            </thead>
+            <tbody>
+            <?php
+                $query="SELECT * FROM `petitorio`;";
+                $ejecutar=mysqli_query($db,$query);
+            ?>
+            <?php
+            while($elemento=mysqli_fetch_assoc($ejecutar)):?>
+            <tr>
+                <td><?php echo $elemento['codigo_siga'];?></td>
+                <td><?php echo $elemento['denomin_comun_internac_o_principio_activo'];?></td>
+                <td><?php echo $elemento['concentracion'];?></td>
+                <td><?php echo $elemento['forma_farmaceutica'];?></td>
+                <td><?php echo $elemento['minimo_stock'];?></td>
+            </tr>
+            <?php endwhile;?>
+            </tbody>
+            </table>
+        </div> 
         <div class="salir">
                 <a href='<?php if($rol==1){
-                    echo('./new-admin.php');
+                    echo('./new-stockmin.php');
                 }else{
                     echo('./new-inicio.php');
                 } ?>'><i class='bx bxs-left-arrow'></i>Volver al inicio</a>

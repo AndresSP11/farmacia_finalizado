@@ -66,7 +66,7 @@ $alertas=[];
             <div class="salir">
                 <a href="
                 <?php if($rol==1){
-                    echo('./new-admin.php');
+                    echo('./visualizaciones.php');
                 }else{
                     echo('./new-inicio.php');
                 } ?>

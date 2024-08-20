@@ -9,6 +9,13 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .fondo-doctora {
   background-image: url("../imagenes/herramienta-doctor.png");
   background-size: cover;
@@ -122,6 +129,32 @@ body {
   width: 100%;
   height: 12vh;
   padding-right: 3vh;
+}
+
+.salir {
+  margin-top: 2vh;
+  width: min-content;
+  float: right;
+}
+
+.salir a {
+  background-color: rgb(25, 87, 128); /* Azul */
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  font-size: 2vh;
+  margin-top: 90px;
+}
+
+.bx {
+  font-family: "Poppins", sans-serif;
 }
 
 .tooltip {

@@ -334,7 +334,7 @@ td:last-child {
 }
 
 .tabla-container {
-  max-height: 425px;
+  max-height: 400px;
   overflow-y: auto;
   border: 1px solid rgb(57, 124, 166);
   overflow-x: auto;
@@ -385,7 +385,7 @@ td:last-child {
 }
 
 .input-merma {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   display: flex;
   width: 70%;
   align-items: center;

@@ -2,8 +2,12 @@
 
 session_start();
 $auth=$_SESSION['auth'];
+$rol=$_SESSION['rol'];
 if(!$auth){
     header('Location:../login.php');
+}
+if($rol!=1){
+    header('Location:./inicio.php');
 }
 header("X-Frame-Options: DENY");
 ?>
@@ -38,15 +42,24 @@ header("X-Frame-Options: DENY");
             <div>
                 <img src="../imagenes/logouni.png" alt="" class="imagen">
             </div>
-            <div>
-                <a href="./recetario.php" class="inventario-enlace">
-                    
-                    <p>Registro de receta</p>
-                </a>
-                <a href="./salida-merma.php" class="ingreso-med-enlace">
-                    
-                    <p>Registro de merma</p>
-                </a>
+            <div class="columns">
+                <div>
+                    <a href="./recetario.php" class="inventario-enlace">
+                        
+                        <p>Registro de receta</p>
+                    </a>
+                    <a href="./salida-merma.php" class="ingreso-med-enlace">
+                        
+                        <p>Registro de merma</p>
+                    </a>
+                </div>
+                <div class="salir">
+                    <a href="<?php if($rol==1){
+                        echo('./new-admin.php');
+                    }else{
+                        echo('./new-inicio.php');
+                    } ?>"><i class='bx bxs-left-arrow'></i>Regresar</a>
+                </div>
             </div>
         </div>
     </section>

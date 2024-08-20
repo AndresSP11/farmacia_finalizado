@@ -81,7 +81,7 @@ $titulo='salida-merma';
         <div class="contenedor-final">
             <div class="salir-receta">
                 <a href="<?php if($rol==1){
-                    echo('./new-admin.php');
+                    echo('./new-stockmin.php');
                 }else{
                     echo('./new-inicio.php');
                 } ?>"><i class='bx bxs-left-arrow'></i>Volver al inicio</a>
