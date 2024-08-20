@@ -2,8 +2,6 @@
 
 include_once('../config/database.php');
 
-
-
 header("X-Frame-Options: DENY");
 $db=conectarDB();
 

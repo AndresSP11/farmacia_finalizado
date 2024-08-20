@@ -153,6 +153,10 @@ body {
   margin-top: 90px;
 }
 
+.salir a:hover {
+  background-color: #75ea96;
+}
+
 .bx {
   font-family: "Poppins", sans-serif;
 }

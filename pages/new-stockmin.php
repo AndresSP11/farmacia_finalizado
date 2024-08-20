@@ -43,19 +43,19 @@ header("X-Frame-Options: DENY");
             <div class="columns">
                 <div>
                     <a href="./definir-min.php" class="inventario-enlace">
-                        <img src="./imagenes/azulmed.png" alt="">
+                        <!-- <img src="../imagenes/azulmed.png" alt=""> -->
                         <p>Stock mínimo</p>
                     </a>
                     <a href="./periodo-admin.php" class="ingreso-med-enlace">
-                        <img src="./imagenes/medicamentos.png" alt="">
+                        <!-- <img src="../imagenes/medicamentos.png" alt=""> -->
                         <p>Periodo</p>
                     </a>
                     <a href="./petitoriomed-admin.php" class="ingreso-med-enlace">
-                        <img src="./imagenes/medicamentos.png" alt="">
+                        <!-- <img src="../imagenes/medicamentos.png" alt=""> -->
                         <p>Actualizar Petitorio</p>
                     </a>
                     <a href="./observarmerma.php" class="ingreso-med-enlace">
-                        <img src="./imagenes/medicamentos.png" alt="">
+                        <!-- <img src="../imagenes/medicamentos.png" alt=""> -->
                         <p>Visualizar <br>Mermas</p>
                     </a>
                 </div>
