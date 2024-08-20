@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo json_encode(['error' => $error]);
         } else {
             // Crear un array para almacenar los resultados
-            $medicamentos = array(); 
+            $medicamentos = array();
 
             // Obtener resultados y agregarlos al array
             while ($resultado = mysqli_fetch_assoc($ejecuta)) {
